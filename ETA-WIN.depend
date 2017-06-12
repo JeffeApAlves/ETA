@@ -1,0 +1,227 @@
+# depslib dependency file v1.0
+1492037919 source:d:\eta\src\app.c
+	"App.h"
+
+1492271876 d:\eta\src\app.h
+	"Type.h"
+
+1491579727 d:\eta\src\type.h
+
+1492082231 source:d:\eta\src\configmenu.c
+	"MainMenu.h"
+	"Container.h"
+	"DataAcquisition.h"
+	"BR_pt.h"
+	"ConfigMenu.h"
+
+1491564407 d:\eta\src\mainmenu.h
+	"Menu.h"
+
+1492275819 d:\eta\src\menu.h
+	<curses.h>
+	<panel.h>
+	"Type.h"
+	"Macro.h"
+
+1216138406 c:\program files (x86)\codeblocks\pdcurs34\curses.h
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+
+1215961696 c:\program files (x86)\codeblocks\pdcurs34\panel.h
+	<curses.h>
+
+1492296860 d:\eta\src\macro.h
+	"Menu.h"
+	<stdlib.h>
+
+1492040845 d:\eta\src\dataacquisition.h
+
+1491652990 d:\eta\src\br_pt.h
+
+1491576595 d:\eta\src\configmenu.h
+	"Menu.h"
+
+1492293940 source:d:\eta\src\container.c
+	"Container.h"
+
+1491587846 d:\eta\src\container.h
+	"Menu.h"
+	"Display.h"
+	"MainForm.h"
+	"Macro.h"
+
+1491576460 d:\eta\src\display.h
+	<curses.h>
+	<panel.h>
+	"BR_pt.h"
+	"Type.h"
+
+1491595024 d:\eta\src\mainform.h
+	"Display.h"
+	"Macro.h"
+
+1492041035 source:d:\eta\src\dataacquisition.c
+	<stdlib.h>
+	"InterfaceDA.h"
+	"DemoRandom.h"
+	"DemoIncremental.h"
+	"RBPI3.h"
+	"DataAcquisition.h"
+
+1491590969 d:\eta\src\interfaceda.h
+	"Type.h"
+
+1492041790 d:\eta\src\demorandom.h
+	"InterfaceDA.h"
+
+1492041767 d:\eta\src\demoincremental.h
+	"InterfaceDA.h"
+
+1492041816 d:\eta\src\rbpi3.h
+	"InterfaceDA.h"
+
+1492041725 source:d:\eta\src\demoincremental.c
+	<stdlib.h>
+	"DemoIncremental.h"
+
+1492041596 source:d:\eta\src\demorandom.c
+	<stdlib.h>
+	"DemoRandom.h"
+
+1491592705 source:d:\eta\src\dispenser.c
+	"Misc.h"
+	"BR_pt.h"
+	"Dispenser.h"
+
+1492302516 d:\eta\src\misc.h
+	"Type.h"
+
+1491572608 d:\eta\src\dispenser.h
+	"Type.h"
+
+1492276162 source:d:\eta\src\display.c
+	"Container.h"
+	"Misc.h"
+	"Display.h"
+
+1491578215 source:d:\eta\src\eta.c
+	"Valve.h"
+	"Pump.h"
+	"Tank.h"
+	"FlowSensor.h"
+	"Dispenser.h"
+	"DataAcquisition.h"
+	"ETA.h"
+
+1491572280 d:\eta\src\valve.h
+	"Type.h"
+
+1491572295 d:\eta\src\pump.h
+	"Type.h"
+
+1491578275 d:\eta\src\tank.h
+	"Type.h"
+
+1491572760 d:\eta\src\flowsensor.h
+	"Type.h"
+
+1491564884 d:\eta\src\eta.h
+
+1491592381 source:d:\eta\src\flowsensor.c
+	"Misc.h"
+	"BR_pt.h"
+	"FlowSensor.h"
+
+1495674491 source:d:\eta\src\main.c
+	<curses.h>
+	"MainMenu.h"
+	"Container.h"
+	"TasksManager.h"
+	"App.h"
+	<stdio.h>
+
+1492294729 d:\eta\src\tasksmanager.h
+	<pthread.h>
+
+1491595051 source:d:\eta\src\mainform.c
+	"Valve.h"
+	"Pump.h"
+	"Tank.h"
+	"FlowSensor.h"
+	"Dispenser.h"
+	"MainForm.h"
+	"Container.h"
+
+1492041427 source:d:\eta\src\mainmenu.c
+	"SimulatorMenu.h"
+	"MonitorMenu.h"
+	"ConfigMenu.h"
+	"BR_pt.h"
+	"Container.h"
+	"MainMenu.h"
+
+1491576502 d:\eta\src\simulatormenu.h
+	"Menu.h"
+
+1491576391 d:\eta\src\monitormenu.h
+	"Menu.h"
+
+1492313899 source:d:\eta\src\menu.c
+	<string.h>
+	"Container.h"
+	"Misc.h"
+	"Menu.h"
+
+1492044914 d:\eta\src\key.h
+
+1492314177 source:d:\eta\src\misc.c
+	<termios.h>
+	<string.h>
+	<stdio.h>
+	<unistd.h>
+	<fcntl.h>
+	"BR_pt.h"
+	"Misc.h"
+
+1491577089 source:d:\eta\src\monitormenu.c
+	"MainMenu.h"
+	"MainForm.h"
+	"BR_pt.h"
+	"Container.h"
+	"MonitorMenu.h"
+
+1491571607 source:d:\eta\src\pump.c
+	"Misc.h"
+	"BR_pt.h"
+	"Pump.h"
+
+1492045698 source:d:\eta\src\rbpi3.c
+	<stdlib.h>
+	"RBPI3.h"
+
+1492045738 source:d:\eta\src\simulatormenu.c
+	"MainMenu.h"
+	"DataAcquisition.h"
+	"SimulatorMenu.h"
+	"BR_pt.h"
+
+1492041502 source:d:\eta\src\tank.c
+	"Misc.h"
+	"BR_pt.h"
+	"string.h"
+	"Tank.h"
+
+1492296365 source:d:\eta\src\tasksmanager.c
+	"Container.h"
+	"DataAcquisition.h"
+	"ETA.h"
+	"TasksManager.h"
+
+1492039234 source:d:\eta\src\valve.c
+	<string.h>
+	"Misc.h"
+	"BR_pt.h"
+	"Valve.h"
+

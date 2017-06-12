@@ -1,0 +1,531 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>ETA</title>
+<style type="text/css">
+    li { list-style: none;  margin: 0; }
+    p { margin: 0; }
+    span.foldopened { color: white; font-size: xx-small;
+    border-width: 1; font-family: monospace; padding: 0em 0.25em 0em 0.25em; background: #e0e0e0;
+    VISIBILITY: visible;
+    cursor:pointer; }
+
+
+    span.foldclosed { color: #666666; font-size: xx-small;
+    border-width: 1; font-family: monospace; padding: 0em 0.25em 0em 0.25em; background: #e0e0e0;
+    VISIBILITY: hidden;
+    cursor:pointer; }
+
+    span.foldspecial { color: #666666; font-size: xx-small; border-style: none solid solid none;
+    border-color: #CCCCCC; border-width: 1; font-family: sans-serif; padding: 0em 0.1em 0em 0.1em; background: #e0e0e0;
+    cursor:pointer; }
+
+    span.l { color: red; font-weight: bold; }
+
+    a.mapnode:link {text-decoration: none; color: black; }
+    a.mapnode:visited {text-decoration: none; color: black; }
+    a.mapnode:active {text-decoration: none; color: black; }
+    a.mapnode:hover {text-decoration: none; color: black; background: #eeeee0; }
+
+</style>
+<!-- ^ Position is not set to relative / absolute here because of Mozilla -->
+</head>
+<body>
+
+<script type="text/javascript">
+   // Here we implement folding. It works fine with MSIE5.5, MSIE6.0 and
+   // Mozilla 0.9.6.
+
+   if (document.layers) {
+      //Netscape 4 specific code
+      pre = 'document.';
+      post = ''; }
+   if (document.getElementById) {
+      //Netscape 6 specific code
+      pre = 'document.getElementById("';
+      post = '").style'; }
+   if (document.all) {
+      //IE4+ specific code
+      pre = 'document.all.';
+      post = '.style'; }
+
+function layer_exists(layer) {
+   try {
+      eval(pre + layer + post);
+      return true; }
+   catch (error) {
+      return false; }}
+
+function show_layer(layer) {
+   eval(pre + layer + post).position = 'relative'; 
+   eval(pre + layer + post).visibility = 'visible'; }
+
+function hide_layer(layer) {
+   eval(pre + layer + post).visibility = 'hidden';
+   eval(pre + layer + post).position = 'absolute'; }
+
+function hide_folder(folder) {
+    hide_folding_layer(folder)
+    show_layer('show'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function show_folder(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_layer('show'+folder+'_'+i); }
+}
+function show_folder_completely(folder) {
+    // Precondition: all subfolders are folded
+
+    show_layer('hide'+folder);
+    hide_layer('show'+folder);
+    show_layer('fold'+folder);
+
+    scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+
+    var i;
+    for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_folder_completely(folder+'_'+i); }
+}
+
+
+
+function hide_folding_layer(folder) {
+   var i;
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       hide_folding_layer(folder+'_'+i); }
+
+   hide_layer('hide'+folder);
+   hide_layer('show'+folder);
+   hide_layer('fold'+folder);
+
+   scrollBy(0,0); // This is a work around to make it work in Browsers (Explorer, Mozilla)
+}
+
+function fold_document() {
+   var i;
+   var folder = '1';
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       hide_folder(folder+'_'+i); }
+}
+
+function unfold_document() {
+   var i;
+   var folder = '1';
+   for (i=1; layer_exists('fold'+folder+'_'+i); ++i) {
+       show_folder_completely(folder+'_'+i); }
+}
+
+</script>
+<SPAN class="foldspecial" onclick="fold_document()">All +</SPAN>
+<SPAN class="foldspecial" onclick="unfold_document()">All -</SPAN>
+<p><span style="color: #ff0000;font-size: 83%;font-family: Sitka Text, sans-serif; ">ETA</span>
+<ul><li><span id="show1_1" class="foldclosed" onClick="show_folder('1_1')" style="POSITION: absolute">+</span> <span id="hide1_1" class="foldopened" onClick="hide_folder('1_1')">-</span>
+<span style="color: #111111;">Desenvolvimento de SW </span>
+<ul id="fold1_1" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Arquitetura</span>
+<ul><li><span id="show1_1_1" class="foldclosed" onClick="show_folder('1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_1_1" class="foldopened" onClick="hide_folder('1_1_1')">-</span>
+<span style="color: #111111;"> 3 camadas</span>
+<ul id="fold1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">View</span>
+<ul><li><span id="show1_1_1_1" class="foldclosed" onClick="show_folder('1_1_1_1')" style="POSITION: absolute">+</span> <span id="hide1_1_1_1" class="foldopened" onClick="hide_folder('1_1_1_1')">-</span>
+<span style="color: #111111;">TUI (Text user interface)</span>
+<ul id="fold1_1_1_1" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">ncurses</span>
+<ul><li><span style="color: #111111;">Varias linguagens</span>
+
+</li>
+<li><span style="color: #111111;">Varias plataforma</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_1_1_2" class="foldclosed" onClick="show_folder('1_1_1_2')" style="POSITION: absolute">+</span> <span id="hide1_1_1_2" class="foldopened" onClick="hide_folder('1_1_1_2')">-</span>
+<span style="color: #111111;">GUI (Graphical user interface)</span>
+<ul id="fold1_1_1_2" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Labview</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Dominio</span>
+
+</li>
+<li><span style="color: #111111;">Dados</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Orientada a eventos</span>
+
+</li>
+<li><span style="color: #111111;">Orientado a interface</span>
+
+</li>
+<li><span style="color: #111111;">Multi Thread</span>
+
+</li>
+<li><span id="show1_1_2" class="foldclosed" onClick="show_folder('1_1_2')" style="POSITION: absolute">+</span> <span id="hide1_1_2" class="foldopened" onClick="hide_folder('1_1_2')">-</span>
+<span style="color: #111111;">Bibliotecas</span>
+<ul id="fold1_1_2" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Estatica</span>
+
+</li>
+<li><span style="color: #111111;">Dinamica</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Conceitos de POO</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Objetivos</span>
+<ul><li><span style="color: #111111;">Testabilidade</span>
+
+</li>
+<li><span style="color: #111111;">Escalabilidade</span>
+
+</li>
+<li><span style="color: #111111;">Manutenibilidade</span>
+
+</li>
+<li><span style="color: #111111;">Performance</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Boas praticas</span>
+<ul><li><span id="show1_1_3" class="foldclosed" onClick="show_folder('1_1_3')" style="POSITION: absolute">+</span> <span id="hide1_1_3" class="foldopened" onClick="hide_folder('1_1_3')">-</span>
+<span style="color: #111111;">Coesao - Funcoes com o objetivo claro e preciso e tamanho reduzio</span>
+<ul id="fold1_1_3" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">&#xa;    <img src="Coesao%20e%20Acoplamento.jpg" >&#xa;  </span>
+</li>
+</ul>
+</li>
+<li><span id="show1_1_4" class="foldclosed" onClick="show_folder('1_1_4')" style="POSITION: absolute">+</span> <span id="hide1_1_4" class="foldopened" onClick="hide_folder('1_1_4')">-</span>
+<span style="color: #111111;">Encapsulamento</span>
+<ul id="fold1_1_4" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">&#xa;    <img src="oop.jpg" >&#xa;  </span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_1_5" class="foldclosed" onClick="show_folder('1_1_5')" style="POSITION: absolute">+</span> <span id="hide1_1_5" class="foldopened" onClick="hide_folder('1_1_5')">-</span>
+<span style="color: #111111;">Visibilidade</span>
+<ul id="fold1_1_5" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Public</span>
+<ul><li><span style="color: #111111;">Keyword extern </span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Private</span>
+<ul><li><span style="color: #111111;">key word static</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">&#xa;    <img src="download.jpg" >&#xa;  </span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_1_6" class="foldclosed" onClick="show_folder('1_1_6')" style="POSITION: absolute">+</span> <span id="hide1_1_6" class="foldopened" onClick="hide_folder('1_1_6')">-</span>
+<span style="color: #111111;">Designer Patterns</span>
+<ul id="fold1_1_6" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Interface</span>
+
+</li>
+<li><span style="color: #111111;">container</span>
+
+</li>
+<li><span style="color: #111111;">Value Object</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Baixo Acoplamento</span>
+
+</li>
+<li><span id="show1_1_7" class="foldclosed" onClick="show_folder('1_1_7')" style="POSITION: absolute">+</span> <span id="hide1_1_7" class="foldopened" onClick="hide_folder('1_1_7')">-</span>
+<span style="color: #111111;">Reducao de fluxos alternativos (if)</span>
+<ul id="fold1_1_7" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Reduz tests cases</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_1_8" class="foldclosed" onClick="show_folder('1_1_8')" style="POSITION: absolute">+</span> <span id="hide1_1_8" class="foldopened" onClick="hide_folder('1_1_8')">-</span>
+<span style="color: #111111;">Alocacao dinamica</span>
+<ul id="fold1_1_8" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Recurso alocados conforme a demanda</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Constantes/defines numeros magicos </span>
+
+</li>
+<li><span style="color: #111111;">uso de enumeracoes</span>
+
+</li>
+<li><span id="show1_1_9" class="foldclosed" onClick="show_folder('1_1_9')" style="POSITION: absolute">+</span> <span id="hide1_1_9" class="foldopened" onClick="hide_folder('1_1_9')">-</span>
+<span style="color: #111111;">Reutilizacao</span>
+<ul id="fold1_1_9" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">funcao</span>
+
+</li>
+<li><span style="color: #111111;">macro</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Comentarios</span>
+
+</li>
+<li><span id="show1_1_10" class="foldclosed" onClick="show_folder('1_1_10')" style="POSITION: absolute">+</span> <span id="hide1_1_10" class="foldopened" onClick="hide_folder('1_1_10')">-</span>
+<span style="color: #111111;">Unico ponto de return dentro de uma funcao</span>
+<ul id="fold1_1_10" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Facilita o debug</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_1_11" class="foldclosed" onClick="show_folder('1_1_11')" style="POSITION: absolute">+</span> <span id="hide1_1_11" class="foldopened" onClick="hide_folder('1_1_11')">-</span>
+<span style="color: #111111;">Parametros por referencia</span>
+<ul id="fold1_1_11" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Performance</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Modularizacao</span>
+
+</li>
+<li><span style="color: #111111;">code style</span>
+<ul><li><span style="color: #111111;">Funcoes inicia com verbo e caixa baixa</span>
+
+</li>
+<li><span style="color: #111111;">Variavel (Substantivos) - CamelCase</span>
+
+</li>
+<li><span style="color: #111111;">Constantes caixa alta</span>
+
+</li>
+<li><span style="color: #111111;">Variaveis ponteiros [prefixo 'p']</span>
+
+</li>
+<li><span style="color: #111111;">Variaveis com ref. de interface [prefixo 'i']</span>
+
+</li>
+<li><span style="color: #111111;">Indentacao</span>
+
+</li>
+<li><span style="color: #111111;">Nome de funcoes e variaveis em um unico idioma</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_1_12" class="foldclosed" onClick="show_folder('1_1_12')" style="POSITION: absolute">+</span> <span id="hide1_1_12" class="foldopened" onClick="hide_folder('1_1_12')">-</span>
+<span style="color: #111111;">Tipagem</span>
+<ul id="fold1_1_12" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Tipos primitivos</span>
+
+</li>
+<li><span style="color: #111111;">Customizados</span>
+<ul><li><span style="color: #111111;">typedef (contextualizar)</span>
+
+</li>
+<li><span style="color: #111111;">struct</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Modelagem</span>
+<ul><li><span id="show1_1_13" class="foldclosed" onClick="show_folder('1_1_13')" style="POSITION: absolute">+</span> <span id="hide1_1_13" class="foldopened" onClick="hide_folder('1_1_13')">-</span>
+<span style="color: #111111;">Abstracao do Mundo real</span>
+<ul id="fold1_1_13" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">POO</span>
+<ul><li><span style="color: #111111;">objetos</span>
+<ul><li><span style="color: #111111;">Classe</span>
+<ul><li><span style="color: #111111;">Metodos</span>
+
+</li>
+<li><span style="color: #111111;">Propriedade/atributos</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Estruturada</span>
+<ul><li><span style="color: #111111;">Objetos</span>
+<ul><li><span style="color: #111111;">Estruturas</span>
+
+</li>
+<li><span style="color: #111111;">funcoes</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Documentacao</span>
+<ul><li><span style="color: #111111;">Geracao automatica atraves dos comentarios</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_2" class="foldclosed" onClick="show_folder('1_2')" style="POSITION: absolute">+</span> <span id="hide1_2" class="foldopened" onClick="hide_folder('1_2')">-</span>
+<span style="color: #111111;">Processo de desenvolvimento</span>
+<ul id="fold1_2" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Conceito</span>
+
+</li>
+<li><span style="color: #111111;">Implementacao</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_3" class="foldclosed" onClick="show_folder('1_3')" style="POSITION: absolute">+</span> <span id="hide1_3" class="foldopened" onClick="hide_folder('1_3')">-</span>
+Solucao
+<ul id="fold1_3" style="POSITION: relative; VISIBILITY: visible;"><li><img src="Sem%20t&#xed;tulo.png"/>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_4" class="foldclosed" onClick="show_folder('1_4')" style="POSITION: absolute">+</span> <span id="hide1_4" class="foldopened" onClick="hide_folder('1_4')">-</span>
+<span style="color: #111111;">Engenharia de Requisitos</span>
+<ul id="fold1_4" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Prospecao de requisitos</span>
+<ul><li><span style="color: #111111;">Verbos - funcoes/metodos</span>
+
+</li>
+<li><span style="color: #111111;">Substantivos sao atributos/propriedades</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Escopo</span>
+<ul><li><span style="color: #111111;">Requisitos</span>
+<ul><li><span id="show1_4_1" class="foldclosed" onClick="show_folder('1_4_1')" style="POSITION: absolute">+</span> <span id="hide1_4_1" class="foldopened" onClick="hide_folder('1_4_1')">-</span>
+<span style="color: #111111;">Mercado</span>
+<ul id="fold1_4_1" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Funcional</span>
+
+</li>
+<li><span style="color: #111111;">NAO Funcional</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_4_2" class="foldclosed" onClick="show_folder('1_4_2')" style="POSITION: absolute">+</span> <span id="hide1_4_2" class="foldopened" onClick="hide_folder('1_4_2')">-</span>
+<span style="color: #111111;">Legais</span>
+<ul id="fold1_4_2" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Funcional</span>
+
+</li>
+<li><span style="color: #111111;">Nao funcional</span>
+
+</li>
+
+</ul>
+</li>
+<li><span style="color: #111111;">Negocio</span>
+
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+
+</ul>
+</li>
+<li><span id="show1_5" class="foldclosed" onClick="show_folder('1_5')" style="POSITION: absolute">+</span> <span id="hide1_5" class="foldopened" onClick="hide_folder('1_5')">-</span>
+<span style="color: #111111;">Ambiente de desenvolvimento</span>
+<ul id="fold1_5" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">FreeMind</span>
+
+</li>
+<li><span style="color: #111111;">Dev-C</span>
+
+</li>
+<li><span style="color: #111111;">Docxygen</span>
+
+</li>
+<li><span style="color: #111111;">Labview</span>
+
+</li>
+<li><span style="color: #111111;">GCC</span>
+
+</li>
+
+</ul>
+</li>
+<li><span id="show1_6" class="foldclosed" onClick="show_folder('1_6')" style="POSITION: absolute">+</span> <span id="hide1_6" class="foldopened" onClick="hide_folder('1_6')">-</span>
+<span style="color: #111111;">TODO</span>
+<ul id="fold1_6" style="POSITION: relative; VISIBILITY: visible;"><li><span style="color: #111111;">Criar biblioteca estatica e dinamica</span>
+
+</li>
+<li><span style="color: #111111;">Terminar o layer de negocio</span>
+
+</li>
+<li>Terminar o GUI
+
+</li>
+<li>Rver os requisitos
+
+</li>
+
+</ul>
+</li>
+
+</ul><SCRIPT type="text/javascript">
+fold_document();
+</SCRIPT>
+</body>
+</html>

@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['getappstatus',['getAppStatus',['../_app_8c.html#a423a807521f5c2b47ea34665291fa4d1',1,'App.c']]],
+  ['getdispensercloro',['getDispenserCloro',['../_data_acquisition_8c.html#ab66d5d77f88d874ba4f59ab36f8d4495',1,'DataAcquisition.c']]],
+  ['getdispensercoagulante',['getDispenserCoagulante',['../_data_acquisition_8c.html#ad364d85f7942b65f837e2244afc83a54',1,'DataAcquisition.c']]],
+  ['getdispenserfloculante',['getDispenserFloculante',['../_data_acquisition_8c.html#a9cac7e07b2dd20ae053826ccc2a157fd',1,'DataAcquisition.c']]],
+  ['getdispenserph',['getDispenserPH',['../_data_acquisition_8c.html#a6415ad7cbefbaa29c487b932fe2ead47',1,'DataAcquisition.c']]],
+  ['getflowin',['getFlowIn',['../_data_acquisition_8c.html#a7d5cb7a1ace06a0e30eeb3860a55ff22',1,'DataAcquisition.c']]],
+  ['getflowoil',['getFlowOil',['../_data_acquisition_8c.html#aa707e111a2e35ac463c873359c412e6c',1,'DataAcquisition.c']]],
+  ['getflowout',['getFlowOut',['../_data_acquisition_8c.html#ad42ef5a51a53a2585dea19132e849a68',1,'DataAcquisition.c']]],
+  ['getinterfacedemoincremental',['getInterfaceDemoIncremental',['../_demo_incremental_8c.html#ad65cdaac5ed678cd2104ca18ca43593c',1,'DemoIncremental.c']]],
+  ['getinterfacedemorandom',['getInterfaceDemoRandom',['../_demo_random_8c.html#ad721f028b1ab20488a081ebca48d8bdf',1,'DemoRandom.c']]],
+  ['getinterfacerbpi3',['getInterfaceRBPI3',['../_r_b_p_i3_8c.html#a67a499a692e885e9d3f9cff62eb28828',1,'RBPI3.c']]],
+  ['getlargeritem',['getLargerItem',['../_misc_8c.html#a672f016b37f9fdc11edca948a8de4a86',1,'Misc.c']]],
+  ['getpumpmain',['getPumpMain',['../_data_acquisition_8c.html#a5a138189dbfece153d793fee5a423503',1,'DataAcquisition.c']]],
+  ['gettankchemical',['getTankChemical',['../_data_acquisition_8c.html#ac7ab9471df8587dff2fd2f1669884b3b',1,'DataAcquisition.c']]],
+  ['gettankin',['getTankIn',['../_data_acquisition_8c.html#afa05c78244c1c6587b35bd7bb692557d',1,'DataAcquisition.c']]],
+  ['gettankout',['getTankOut',['../_data_acquisition_8c.html#ac56e0d5da69db6d555a9194fbdc15066',1,'DataAcquisition.c']]],
+  ['gettankseparatoroil',['getTankSeparatorOil',['../_data_acquisition_8c.html#a4d2e31d396ddcfa0994d96d13fd95b28',1,'DataAcquisition.c']]],
+  ['getvalve',['getValve',['../_data_acquisition_8c.html#a681f2c8925b9c828766aed82600d7e66',1,'DataAcquisition.c']]]
+];

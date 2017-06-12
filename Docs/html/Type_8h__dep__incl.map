@@ -1,0 +1,37 @@
+<map id="D:/ETA/SW/Type.h" name="D:/ETA/SW/Type.h">
+<area shape="rect" id="node2" href="$App_8h.html" title="D:/ETA/SW/App.h" alt="" coords="107,80,235,107"/>
+<area shape="rect" id="node5" href="$Menu_8h.html" title="D:/ETA/SW/Menu.h" alt="" coords="866,155,1003,181"/>
+<area shape="rect" id="node20" href="$Display_8h.html" title="D:/ETA/SW/Display.h" alt="" coords="1249,80,1397,107"/>
+<area shape="rect" id="node22" href="$InterfaceDA_8h.html" title="D:/ETA/SW/InterfaceDA.h" alt="" coords="1610,80,1782,107"/>
+<area shape="rect" id="node24" href="$Misc_8h.html" title="D:/ETA/SW/Misc.h" alt="" coords="1996,80,2129,107"/>
+<area shape="rect" id="node31" href="$Dispenser_8h.html" title="D:/ETA/SW/Dispenser.h" alt="" coords="2351,80,2513,107"/>
+<area shape="rect" id="node33" href="$Valve_8h.html" title="D:/ETA/SW/Valve.h" alt="" coords="2537,80,2673,107"/>
+<area shape="rect" id="node34" href="$Pump_8h.html" title="D:/ETA/SW/Pump.h" alt="" coords="2697,80,2836,107"/>
+<area shape="rect" id="node35" href="$Tank_8h.html" title="D:/ETA/SW/Tank.h" alt="" coords="2860,80,2993,107"/>
+<area shape="rect" id="node36" href="$FlowSensor_8h.html" title="D:/ETA/SW/FlowSensor.h" alt="" coords="2153,80,2327,107"/>
+<area shape="rect" id="node3" href="$App_8c.html" title="Funcoes para manipulacao da maquina de estado do SW. " alt="" coords="5,155,133,181"/>
+<area shape="rect" id="node4" href="$main_8c.html" title="Software para gerenciamento de processo automatizado de estacoes de tratamento de agua..." alt="" coords="71,304,204,331"/>
+<area shape="rect" id="node6" href="$MainMenu_8h.html" title="D:/ETA/SW/MainMenu.h" alt="" coords="241,229,407,256"/>
+<area shape="rect" id="node11" href="$ConfigMenu_8h.html" title="D:/ETA/SW/ConfigMenu.h" alt="" coords="431,229,604,256"/>
+<area shape="rect" id="node12" href="$Container_8h.html" title="D:/ETA/SW/Container.h" alt="" coords="1151,229,1311,256"/>
+<area shape="rect" id="node16" href="$Menu_8c.html" title="Componente menu criado utilizando a lib Pdcurses. " alt="" coords="1035,304,1173,331"/>
+<area shape="rect" id="node18" href="$SimulatorMenu_8h.html" title="D:/ETA/SW/SimulatorMenu.h" alt="" coords="628,229,820,256"/>
+<area shape="rect" id="node19" href="$MonitorMenu_8h.html" title="D:/ETA/SW/MonitorMenu.h" alt="" coords="845,229,1025,256"/>
+<area shape="rect" id="node7" href="$ConfigMenu_8c.html" title="Menu Configuracao criado utilizando o componente menu. " alt="" coords="228,304,401,331"/>
+<area shape="rect" id="node8" href="$MainMenu_8c.html" title="Menu principal com seus repectivos eventos para cada item. " alt="" coords="641,304,807,331"/>
+<area shape="rect" id="node9" href="$MonitorMenu_8c.html" title="Menu Monitoramento. " alt="" coords="831,304,1011,331"/>
+<area shape="rect" id="node10" href="$SimulatorMenu_8c.html" title="Menu de simulacoes. " alt="" coords="425,304,617,331"/>
+<area shape="rect" id="node13" href="$Container_8c.html" title="Container para &quot;objetos&quot; do TUI. " alt="" coords="1197,304,1357,331"/>
+<area shape="rect" id="node14" href="$Display_8c.html" title="Componente display. " alt="" coords="1597,304,1745,331"/>
+<area shape="rect" id="node15" href="$MainForm_8c.html" title="Formulario principal Ajustar a tela do terminal para 100 colunas x 35 linhas e fonte Courier New..." alt="" coords="2504,304,2667,331"/>
+<area shape="rect" id="node17" href="$TasksManager_8c.html" title="Gerenciador de tasks atraves de Threads. " alt="" coords="1382,304,1573,331"/>
+<area shape="rect" id="node21" href="$MainForm_8h.html" title="D:/ETA/SW/MainForm.h" alt="" coords="1097,155,1260,181"/>
+<area shape="rect" id="node23" href="$DataAcquisition_8c.html" title="Manipulador da interface de comunicacao. " alt="" coords="1386,155,1582,181"/>
+<area shape="rect" id="node25" href="$Dispenser_8c.html" title="Entidade dosador. " alt="" coords="2012,155,2175,181"/>
+<area shape="rect" id="node26" href="$FlowSensor_8c.html" title="Entidade Fluxo. " alt="" coords="1815,155,1988,181"/>
+<area shape="rect" id="node27" href="$Misc_8c.html" title="Funcoes de uso gerais. " alt="" coords="1657,155,1791,181"/>
+<area shape="rect" id="node28" href="$Pump_8c.html" title="Entidade Bomba. " alt="" coords="2409,155,2548,181"/>
+<area shape="rect" id="node29" href="$Tank_8c.html" title="Entidade Tank. " alt="" coords="2623,155,2756,181"/>
+<area shape="rect" id="node30" href="$Valve_8c.html" title="Entidade Valvula. " alt="" coords="2199,155,2335,181"/>
+<area shape="rect" id="node32" href="$ETA_8c.html" title="Controler da camada de negocio. " alt="" coords="2831,155,2961,181"/>
+</map>

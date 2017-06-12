@@ -1,0 +1,10 @@
+<map id="D:/ETA/SW/Display.h" name="D:/ETA/SW/Display.h">
+<area shape="rect" id="node2" href="$Container_8h.html" title="D:/ETA/SW/Container.h" alt="" coords="539,155,699,181"/>
+<area shape="rect" id="node4" href="$Display_8c.html" title="Componente display. " alt="" coords="5,229,153,256"/>
+<area shape="rect" id="node9" href="$MainForm_8h.html" title="D:/ETA/SW/MainForm.h" alt="" coords="677,80,839,107"/>
+<area shape="rect" id="node3" href="$Container_8c.html" title="Container para &quot;objetos&quot; do TUI. " alt="" coords="178,229,338,256"/>
+<area shape="rect" id="node5" href="$MainForm_8c.html" title="Formulario principal Ajustar a tela do terminal para 100 colunas x 35 linhas e fonte Courier New..." alt="" coords="739,229,902,256"/>
+<area shape="rect" id="node6" href="$Menu_8c.html" title="Componente menu criado utilizando a lib Pdcurses. " alt="" coords="363,229,500,256"/>
+<area shape="rect" id="node7" href="$MonitorMenu_8c.html" title="Menu Monitoramento. " alt="" coords="927,229,1107,256"/>
+<area shape="rect" id="node8" href="$TasksManager_8c.html" title="Gerenciador de tasks atraves de Threads. " alt="" coords="524,229,715,256"/>
+</map>

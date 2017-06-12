@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['text_5fcloro',['TEXT_CLORO',['../BR__pt_8h.html#a02d9943875884dd89bbdaa392b7d2e46',1,'BR_pt.h']]],
+  ['text_5fcoagulante',['TEXT_COAGULANTE',['../BR__pt_8h.html#ae3c0423577cfb0f9771b142fc5458013',1,'BR_pt.h']]],
+  ['text_5ffloculante',['TEXT_FLOCULANTE',['../BR__pt_8h.html#a40ac2d8398112703d35e7f837d6a26ff',1,'BR_pt.h']]],
+  ['text_5fflow_5fin',['TEXT_FLOW_IN',['../BR__pt_8h.html#a5c7a91d8fb342394de29b72b4094ded5',1,'BR_pt.h']]],
+  ['text_5fflow_5foil',['TEXT_FLOW_OIL',['../BR__pt_8h.html#a30c0309e23e8b6378eb2f0f8270f0430',1,'BR_pt.h']]],
+  ['text_5fflow_5fout',['TEXT_FLOW_OUT',['../BR__pt_8h.html#ac1eb15e96c811d308a130e5589a0b237',1,'BR_pt.h']]],
+  ['text_5fph',['TEXT_PH',['../BR__pt_8h.html#a7e0dcc8b2039c8e31a8beb03a1c59ee8',1,'BR_pt.h']]],
+  ['text_5fpump',['TEXT_PUMP',['../BR__pt_8h.html#a3bfff7a99ee80efce09c5913613cd535',1,'BR_pt.h']]],
+  ['text_5ftank_5fchemical',['TEXT_TANK_CHEMICAL',['../BR__pt_8h.html#ae1a20690951d81aac8a2af57254b83dd',1,'BR_pt.h']]],
+  ['text_5ftank_5fin',['TEXT_TANK_IN',['../BR__pt_8h.html#a7856630721f83057253c5dc685b71261',1,'BR_pt.h']]],
+  ['text_5ftank_5fout',['TEXT_TANK_OUT',['../BR__pt_8h.html#a94550d27408c5e3946a7edb31be62394',1,'BR_pt.h']]],
+  ['text_5ftank_5fsow',['TEXT_TANK_SOW',['../BR__pt_8h.html#ac10bd0aae56d7caa70f06ceea13363a3',1,'BR_pt.h']]],
+  ['text_5fvalve_5fout',['TEXT_VALVE_OUT',['../BR__pt_8h.html#a20b486129b89820705f40bc48b640153',1,'BR_pt.h']]],
+  ['time_5fof_5fda',['TIME_OF_DA',['../TasksManager_8h.html#a3d93b0a4d85d46c20c754961cfe14075',1,'TasksManager.h']]],
+  ['time_5fof_5fdomain',['TIME_OF_DOMAIN',['../TasksManager_8h.html#ac67e375c88cb35e614c43ca14901b5a6',1,'TasksManager.h']]],
+  ['time_5fof_5ffront_5fend',['TIME_OF_FRONT_END',['../TasksManager_8h.html#ac3af57e884314ced4f666222c240d09f',1,'TasksManager.h']]]
+];
