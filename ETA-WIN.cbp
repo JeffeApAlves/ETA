@@ -14,12 +14,13 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
-					<Add directory="C:/Program Files (x86)/CodeBlocks/pdcurs34" />
-					<Add directory="C:/Program Files (x86)/CodeBlocks/pdcurs34/win32" />
+					<Add directory="C:/Program Files/mingw-w64/pdcurs34" />
+					<Add directory="C:/Program Files/mingw-w64/pdcurs34/win32" />
 				</Compiler>
 				<Linker>
 					<Add library="D:/ETA/Lib/Win64/panel.a" />
 					<Add library="D:/ETA/Lib/Win64/pdcurses.a" />
+					<Add library="C:/Program Files/mingw-w64/x86_64-7.1.0-posix-seh-rt_v5-rev1/mingw64/x86_64-w64-mingw32/lib/libpthread.a" />
 					<Add directory="D:/ETA/Lib/Win64" />
 				</Linker>
 			</Target>

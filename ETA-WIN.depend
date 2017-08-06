@@ -134,7 +134,7 @@
 	"BR_pt.h"
 	"FlowSensor.h"
 
-1495674491 source:d:\eta\src\main.c
+1495674629 source:d:\eta\src\main.c
 	<curses.h>
 	"MainMenu.h"
 	"Container.h"
@@ -142,7 +142,7 @@
 	"App.h"
 	<stdio.h>
 
-1492294729 d:\eta\src\tasksmanager.h
+1501910612 d:\eta\src\tasksmanager.h
 	<pthread.h>
 
 1491595051 source:d:\eta\src\mainform.c
@@ -213,7 +213,7 @@
 	"string.h"
 	"Tank.h"
 
-1492296365 source:d:\eta\src\tasksmanager.c
+1501910073 source:d:\eta\src\tasksmanager.c
 	"Container.h"
 	"DataAcquisition.h"
 	"ETA.h"
@@ -224,4 +224,13 @@
 	"Misc.h"
 	"BR_pt.h"
 	"Valve.h"
+
+1216138406 c:\program files\mingw-w64\pdcurs34\curses.h
+	<stdarg.h>
+	<stddef.h>
+	<stdio.h>
+	<wchar.h>
+
+1215961696 c:\program files\mingw-w64\pdcurs34\panel.h
+	<curses.h>
 
