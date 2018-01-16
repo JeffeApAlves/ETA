@@ -4,4 +4,3 @@ IHM para um supervisorio de estação de tratamento de água utilizando a biblio
 
 [Documentacao (local)](html/index.html)
 
-[Software](html/index.html)
