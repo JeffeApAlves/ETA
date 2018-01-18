@@ -2,5 +2,5 @@
 
 IHM para um supervisório de estação de tratamento de água utilizando a biblioteca ncurses para implementação de TUI (Texte User Interface). Conceito que pode ser explorado por dispositivos com recursos gráficos limitados.
 
-[Documentação (local)](html/index.html)
+[Documentação](html/index.html)
 
