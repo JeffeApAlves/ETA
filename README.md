@@ -1,5 +1,4 @@
-# Estação de tratamento de Água [(ETA)](https://jeffeapalves.github.io/ETA/)
+# ETA (Estação de tratamento de Água)
 
-IHM para um supervisório de estação de tratamento de agua utilizando a biblioteca Ncurses.
-
+Please visit the gh-pages of project [here](https://jeffeapalves.github.io/ETA/).
 
