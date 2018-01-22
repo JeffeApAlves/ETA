@@ -4,8 +4,24 @@ IHM para um supervisório de estação de tratamento de água utilizando a bibli
 
 Na  figura abaixo se encontra um overview simplificado da arquitetura
 
+## Arquitetura
+
+Overview da arquitetura do software
+
 ![Arquitetura](image/Arquitetura.png)
 
-Para acessar a documentação click [aqui](html/index.html)
+## Software
+
+Screenshot da tela
+
+![Screenshot da tela][measure_screen]
 
 
+## Links
+
+Documentação gerada via Doxygen [see here][doc_doxygen] [versão (pdf][doc_pdf]
+
+
+[doc_doxygen]:html/index.htm
+[doc_pdf]:latex/refman.pdf
+[measure_screen]:image/measure_screen.png
