@@ -19,9 +19,9 @@ Screenshot da tela
 
 ## Links
 
-Documentação gerada via Doxygen [see here][doc_doxygen] [versão (pdf][doc_pdf]
+Documentação gerada via Doxygen: [|WEB|][doc_doxygen] [|PDF|][doc_pdf]
 
 
-[doc_doxygen]:html/index.htm
+[doc_doxygen]:html/index.html
 [doc_pdf]:latex/refman.pdf
 [measure_screen]:image/measure_screen.png
