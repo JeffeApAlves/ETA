@@ -19,7 +19,7 @@ Screenshot da tela
 
 ## Links
 
-Documentação gerada via Doxygen: [|WEB|][doc_doxygen] [|PDF|][doc_pdf]
+Documentação: |[WEB][doc_doxygen]| |[PDF][doc_pdf]|
 
 
 [doc_doxygen]:html/index.html
